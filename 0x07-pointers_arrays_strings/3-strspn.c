@@ -1,5 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _strspn - Find length of string that consists only of chosen bytes
+ * @s: String to search
+ * @accept: The acceptable bytes string can contain
+ *
+ * Return: Length
+ */
+
 unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int i, l, j, a;
 
 	i = l = 0;
 	while (s[i] != 0)
